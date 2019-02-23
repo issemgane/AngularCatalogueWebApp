@@ -9,15 +9,18 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
-    ProduitsComponent
+    ProduitsComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule,RouterModule.forRoot(appRoutes),HttpClientModule
+    BrowserModule,RouterModule.forRoot(appRoutes),HttpClientModule,FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

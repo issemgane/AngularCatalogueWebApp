@@ -1,3 +1,7 @@
-<p>
-  categories works!
-</p>
+<ul class="list-group" *ngIf="listcategories">
+  <li  [ngClass]="currentCategory && currentCategory._links.self==category._links.self?'active':''"
+  class="list-group-item" *ngFor="let category of listcategories._embedded.categories"
+  style="cursor:pointer" (click)="getProduct(category)">{{category.name}}
+  </li>
+</ul>
+<!-- [ngClass]="currentCategory && currentCategory._links.self==category._links.self?'active':''"-->
