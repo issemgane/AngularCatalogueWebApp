@@ -31,7 +31,6 @@ getProducts(url:string){
   },error=>{
     console.log(error);
   });
-
 }
 
 

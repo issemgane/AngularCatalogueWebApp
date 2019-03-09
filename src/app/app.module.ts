@@ -10,6 +10,9 @@ import { ProduitsComponent } from './produits/produits.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { LoginComponent } from './login/login.component';
+import { AdminCategoriesComponent } from './admin-categories/admin-categories.component';
+import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { AdminUsersComponent } from './admin-users/admin-users.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     CategoriesComponent,
     ProduitsComponent,
-    LoginComponent
+    LoginComponent,
+    AdminCategoriesComponent,
+    AdminProductsComponent,
+    AdminUsersComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(appRoutes),HttpClientModule,FormsModule,
